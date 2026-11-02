@@ -1,0 +1,83 @@
+[
+  {
+    "lvc": 1,
+    "stage": 4,
+    "cost": 1000,
+    "num_p": 7,
+    "array": "",
+    "ar_name": "",
+    "num_t": 3
+  },
+  {
+    "lvc": 2,
+    "stage": 4,
+    "cost": 2000,
+    "num_p": 8,
+    "array": "",
+    "ar_name": "",
+    "num_t": 3
+  },
+  {
+    "lvc": 3,
+    "stage": 4,
+    "cost": 4000,
+    "num_p": 9,
+    "array": "",
+    "ar_name": "",
+    "num_t": 3
+  },
+  {
+    "lvc": 4,
+    "stage": 5,
+    "cost": 9000,
+    "num_p": 10,
+    "array": 3,
+    "ar_name": "日月三光阵",
+    "num_t": 4
+  },
+  {
+    "lvc": 5,
+    "stage": 5,
+    "cost": 16000,
+    "num_p": 11,
+    "array": 4,
+    "ar_name": "云台四圣阵",
+    "num_t": 4
+  },
+  {
+    "lvc": 6,
+    "stage": 5,
+    "cost": 30000,
+    "num_p": 12,
+    "array": 5,
+    "ar_name": "御极五行阵",
+    "num_t": 4
+  },
+  {
+    "lvc": 7,
+    "stage": 6,
+    "cost": 54000,
+    "num_p": 13,
+    "array": 6,
+    "ar_name": "六道界杀阵",
+    "num_t": 5
+  },
+  {
+    "lvc": 8,
+    "stage": 6,
+    "cost": 100000,
+    "num_p": 14,
+    "array": 7,
+    "ar_name": "七芒天桓阵",
+    "num_t": 5
+  },
+  {
+    "lvc": 9,
+    "stage": 6,
+    "cost": "",
+    "num_p": 15,
+    "array": 8,
+    "ar_name": "八荒镇魔阵",
+    "num_t": 5
+  }
+]

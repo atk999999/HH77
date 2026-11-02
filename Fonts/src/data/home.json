@@ -1,0 +1,152 @@
+[
+  {
+    "time": 1,
+    "rate": 10,
+    "qua": 2
+  },
+  {
+    "time": 2,
+    "rate": 20,
+    "qua": 2
+  },
+  {
+    "time": 3,
+    "rate": 30,
+    "qua": 2
+  },
+  {
+    "time": 4,
+    "rate": 40,
+    "qua": 2
+  },
+  {
+    "time": 5,
+    "rate": 50,
+    "qua": 3
+  },
+  {
+    "time": 6,
+    "rate": 60,
+    "qua": 3
+  },
+  {
+    "time": 7,
+    "rate": 70,
+    "qua": 3
+  },
+  {
+    "time": 8,
+    "rate": 80,
+    "qua": 3
+  },
+  {
+    "time": 9,
+    "rate": 90,
+    "qua": 4
+  },
+  {
+    "time": 10,
+    "rate": 100,
+    "qua": 4
+  },
+  {
+    "time": 11,
+    "rate": 95,
+    "qua": 4
+  },
+  {
+    "time": 12,
+    "rate": 90,
+    "qua": 4
+  },
+  {
+    "time": 13,
+    "rate": 85,
+    "qua": 4
+  },
+  {
+    "time": 14,
+    "rate": 80,
+    "qua": 4
+  },
+  {
+    "time": 15,
+    "rate": 75,
+    "qua": 4
+  },
+  {
+    "time": 16,
+    "rate": 70,
+    "qua": 4
+  },
+  {
+    "time": 17,
+    "rate": 65,
+    "qua": 4
+  },
+  {
+    "time": 18,
+    "rate": 60,
+    "qua": 4
+  },
+  {
+    "time": 19,
+    "rate": 55,
+    "qua": 4
+  },
+  {
+    "time": 20,
+    "rate": 50,
+    "qua": 4
+  },
+  {
+    "time": 21,
+    "rate": 45,
+    "qua": 4
+  },
+  {
+    "time": 22,
+    "rate": 40,
+    "qua": 4
+  },
+  {
+    "time": 23,
+    "rate": 35,
+    "qua": 4
+  },
+  {
+    "time": 24,
+    "rate": 30,
+    "qua": 4
+  },
+  {
+    "time": 25,
+    "rate": 25,
+    "qua": 4
+  },
+  {
+    "time": 26,
+    "rate": 20,
+    "qua": 4
+  },
+  {
+    "time": 27,
+    "rate": 15,
+    "qua": 4
+  },
+  {
+    "time": 28,
+    "rate": 10,
+    "qua": 4
+  },
+  {
+    "time": 29,
+    "rate": 5,
+    "qua": 4
+  },
+  {
+    "time": 30,
+    "rate": 0,
+    "qua": 4
+  }
+]

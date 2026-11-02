@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>超普通修仙模拟器</title>
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true"/>
+  <style>
+    html, body {
+      margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000;
+    }
+    #GameDiv {
+      width: 100%; height: 100%; position: relative;
+    }
+    #GameCanvas {
+      width: 100%; height: 100%; display: block;
+    }
+    #splash { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; pointer-events: none; }
+    .progress-bar { width: 60%; height: 8px; background: #333; margin: 50% auto 0; }
+    .progress-bar span { display: block; height: 100%; width: 0%; background: #4caf50; }
+  </style>
+</head>
+<body>
+  <div id="GameDiv">
+    <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+    <div id="splash"><div class="progress-bar"><span></span></div></div>
+  </div>
+  <script>
+    window.__getPlatform = function() { return 100; };
+    window.__getOS = function() { return "Android"; };
+    window.__getCurrentLanguage = function() { return "zh"; };
+    window.__getCurrentLanguageCode = function() { return "zh-CN"; };
+    window.__getOSVersion = function() { return "13.0"; };
+    try { localStorage.setItem("xx_tips", "ok"); } catch(e) {}
+    window.jsb = {
+      reflection: {
+        callStaticMethod: function(cls, method, sig, arg) {
+          console.log("[JSB Bridge]", cls, method, sig, arg);
+          if (method === "tapLogin") {
+            setTimeout(function() {
+              if (window.NativeAdCallback) window.NativeAdCallback("startGame");
+            }, 50);
+          } else if (method === "showVedio") {
+            setTimeout(function() {
+              if (window.G && G.temp) G.temp.adStime = G.getNowSec() - 10;
+              if (window.NativeAdCallback) {
+                window.NativeAdCallback("vedioDone");
+                window.NativeAdCallback("vedioClose");
+              }
+            }, 100);
+          }
+          return "";
+        }
+      }
+    };
+    var _origNB = null;
+    Object.defineProperty(window, "NativeAdCallback", {
+      configurable: true,
+      get: function() { return _origNB; },
+      set: function(fn) {
+        _origNB = fn;
+        if (typeof fn === "function") {
+          setTimeout(function() {
+            fn("initOk_{}");
+          }, 50);
+        }
+      }
+    });
+  </script>
+  <script src="src/settings.27b54.js"></script>
+  <script src="src/webgl-adapter.js"></script>
+  <script src="src/cocos2d-js-web.js"></script>
+  <script src="main-web.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      window.boot();
+    });
+  </script>
+</body>
+</html>
